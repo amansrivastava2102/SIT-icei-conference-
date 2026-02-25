@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const slides = [
   {
-    src: '/images/campus/campus1.png',
-    alt: 'Symbiosis Institute of Technology Campus 1',
+    src: "/images/campus/campus1.png",
+    alt: "Symbiosis Institute of Technology Campus 1",
   },
   {
-    src: '/images/campus/campus2.png',
-    alt: 'Symbiosis Institute of Technology Campus 2',
+    src: "/images/campus/campus2.png",
+    alt: "Symbiosis Institute of Technology Campus 2",
   },
   {
-    src: '/images/campus/campus3.png',
-    alt: 'Symbiosis Institute of Technology Campus 3',
+    src: "/images/campus/campus3.png",
+    alt: "Symbiosis Institute of Technology Campus 3",
   },
 ];
 
@@ -24,109 +24,118 @@ const Hero = () => {
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, SLIDE_INTERVAL);
+
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section
       id="home"
-      className="relative mt-24 h-[75vh] min-h-[480px] w-full overflow-hidden bg-black"
+      className="relative mt-24 h-[85vh] min-h-[600px] w-full overflow-hidden bg-black"
       aria-label="ICEI 2026 conference hero section"
     >
-      {/* Campus slideshow */}
+      {/* BACKGROUND SLIDESHOW */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
           <div
             key={slide.src}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentIndex ? 'opacity-100' : 'opacity-0'
+              index === currentIndex ? "opacity-75" : "opacity-0"
             }`}
-            aria-hidden={index !== currentIndex}
           >
             <img
               src={slide.src}
               alt={slide.alt}
               className="h-full w-full object-cover"
-              loading={index === 0 ? 'eager' : 'lazy'}
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
-        {/* Dark gradient overlay for readability */}
+
+        {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/65 to-black/75" />
       </div>
 
-      {/* Centered overlay content */}
-      <div className="relative z-10 flex h-full items-center">
+      {/* TOP LEFT PARTNER LOGO */}
+      <div className="absolute top-6 left-6 z-20">
+        <img
+          src="/images/logos/logo2.png"
+          alt="IEEE Conference"
+          className="h-16 sm:h-20 object-contain"
+        />
+      </div>
+
+      {/* TOP RIGHT PARTNER LOGO */}
+      <div className="absolute top-6 right-6 z-20">
+        <img
+          src="/images/logos/logo4.png"
+          alt="IEEE"
+          className="h-12 sm:h-12 object-contain"
+        />
+      </div>
+
+      {/* CENTER CONTENT */}
+      <div className="relative z-10 flex h-full items-start pt-[35px]">
         <div className="w-full">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div className="mb-4">
+          <div className="w-full max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 text-center space-y-6">
+
+            {/* IEEE tag */}
+            <div>
               <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/25 text-xs sm:text-sm tracking-[0.24em] uppercase text-gray-100">
                 IEEE Conference
               </span>
             </div>
 
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-white drop-shadow-md uppercase max-w-4xl mx-auto">
+            {/* TITLE */}
+            <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white uppercase leading-tight tracking-wide">
               ICEI 2026: 2026 IEEE Conference on Engineering Informatics
             </h1>
 
-            <div className="mt-5 sm:mt-6">
-              <p className="text-sm sm:text-base md:text-lg text-gray-100 font-medium uppercase tracking-[0.16em]">
+            {/* SUB THEME */}
+            <div>
+              <p className="text-sm sm:text-base text-gray-200 font-semibold uppercase tracking-widest">
                 Sub Theme
               </p>
-              <p className="mt-2 text-base sm:text-lg md:text-xl text-gray-50 max-w-3xl mx-auto leading-relaxed">
+
+              <p className="mt-2 text-lg sm:text-xl md:text-2xl font-semibold text-white leading-relaxed max-w-5xl mx-auto">
                 Agentic and Generative AI for Next-Generation Engineering Informatics (AGNEI)
               </p>
             </div>
 
-            <div className="mt-7 sm:mt-8 space-y-1 text-sm sm:text-base text-gray-100">
+            {/* DETAILS */}
+            <div className="space-y-3 text-sm sm:text-base md:text-lg text-white">
               <p>
-                <span className="font-semibold">Date:</span>{' '}
-                <span>November 27–28, 2026</span>
+                <span className="font-bold">Date:</span> November 27–28, 2026
               </p>
-              <p>
-                <span className="font-semibold">Organised By:</span>{' '}
-                <span>Symbiosis Institute of Technology, Pune, Maharashtra, India</span>
+
+              <p className="max-w-5xl mx-auto">
+                <span className="font-bold">Organised By:</span>{" "}
+                Symbiosis Institute of Technology, Pune, Maharashtra, India
               </p>
+
               <p>
-                <span className="font-semibold">Technically Co-Sponsored by:</span>{' '}
-                <span>IEEE Maharashtra Section</span>
+                <span className="font-bold">Technically Co-Sponsored by:</span>{" "}
+                IEEE Maharashtra Section
               </p>
             </div>
 
-            {/* Partner logos row */}
-            <div className="mt-8 sm:mt-10">
+            {/* CENTER PARTNER ONLY */}
+            <div className="pt-4">
               <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-gray-200 mb-3">
                 Conference Partners
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-                <img
-                  src="/images/logos/logo2.png"
-                  alt="IEEE Conference"
-                  className="h-10 sm:h-12 w-auto object-contain"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <img
-                  src="/images/logos/logo3.png"
-                  alt="Swinburne Academy"
-                  className="h-10 sm:h-12 w-auto object-contain"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <img
-                  src="/images/logos/logo4.png"
-                  alt="IEEE"
-                  className="h-10 sm:h-12 w-auto object-contain"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
+
+              <img
+                src="/images/logos/logo3.png"
+                alt="Swinburne Academy"
+                className="mx-auto h-12 sm:h-14 object-contain"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Dot navigation indicators */}
+      {/* DOT INDICATORS */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex space-x-2">
         {slides.map((_, index) => (
           <button
@@ -134,17 +143,16 @@ const Hero = () => {
             type="button"
             className={`h-2.5 rounded-full transition-all duration-300 ${
               index === currentIndex
-                ? 'w-6 bg-white'
-                : 'w-2.5 bg-white/50 hover:bg-white/80'
+                ? "w-6 bg-white"
+                : "w-2.5 bg-white/50 hover:bg-white/80"
             }`}
             onClick={() => setCurrentIndex(index)}
-            aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
 
-      {/* Soft fade into main page content */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent" />
+      {/* LIGHTER BOTTOM FADE */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/40 to-transparent" />
     </section>
   );
 };
