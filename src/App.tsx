@@ -8,7 +8,6 @@ import Attendees from './components/Attendees';
 import CallForPapers from './components/CallForPapers';
 import ImportantDates from './components/ImportantDates';
 import Registration from './components/Registration';
-import Budget from './components/Budget';
 import Sponsorship from './components/Sponsorship';
 import Committees from './components/Committees';
 import Venue from './components/Venue';
@@ -27,7 +26,6 @@ function App() {
       <CallForPapers />
       <ImportantDates />
       <Registration />
-      <Budget />
       <Sponsorship />
       <Committees />
       <Venue />
