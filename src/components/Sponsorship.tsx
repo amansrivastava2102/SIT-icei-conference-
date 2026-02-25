@@ -126,7 +126,7 @@ const Sponsorship = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-900 mb-2">200+</div>
-              <p className="text-gray-700">Expected Attendees</p>
+              <p className="text-gray-700">Experts</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
@@ -150,8 +150,8 @@ const Sponsorship = () => {
           transition={{ duration: 0.6 }}
           className="mt-12 text-center bg-gradient-to-r from-blue-900 to-blue-800 text-white rounded-2xl p-8"
         >
-          <h3 className="text-2xl font-bold mb-4">Custom Sponsorship Options Available</h3>
-          <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+          <h3 className="text-2xl font-bold mb-4 text-white">Custom Sponsorship Options Available</h3>
+          <p className="text-white mb-6 max-w-2xl mx-auto">
             We can create tailored sponsorship packages to meet your specific marketing and branding objectives
           </p>
           <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300">

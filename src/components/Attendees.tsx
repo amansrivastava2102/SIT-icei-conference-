@@ -61,11 +61,8 @@ const Attendees = () => {
             Who Will Attend
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Join 200+ professionals from academia, industry, and government sectors
+          Join 200+ distinguished professionals from academia, industry, and government sectors for an engaging exchange of ideas and innovation.
           </p>
-          <div className="inline-block bg-gradient-to-r from-blue-900 to-blue-700 text-white px-8 py-4 rounded-full text-2xl font-bold">
-            200+ Expected Attendees
-          </div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
