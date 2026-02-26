@@ -15,12 +15,12 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b shadow-sm">
       {/* CONTAINER */}
-      <nav className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* MAIN ROW */}
         <div className="flex items-center justify-between min-h-[80px] py-3">
 
           {/* LEFT — LOGO + TEXT */}
-          <div className="flex items-center gap-4 lg:gap-9 flex-shrink-0">
+          <div className="flex items-center gap-4 lg:gap-6 flex-shrink-0">
 
             {/* LOGO */}
             <img
