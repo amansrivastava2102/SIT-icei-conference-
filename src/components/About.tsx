@@ -1,22 +1,22 @@
 import { motion } from 'framer-motion';
-import { Brain, Network, Factory } from 'lucide-react';
+import { Cpu, Network,Presentation} from 'lucide-react';
 
 const About = () => {
   const cards = [
     {
-      icon: Brain,
+      icon: Presentation,
       title: 'ICEI 2026 Overview',
       description:
         'The 2026 IEEE Conference on Engineering Informatics (ICEI 2026) is an international scientific forum under the flagship of IEEE that brings together academia, industry, and research communities to present advances in AI-driven engineering informatics and digital engineering systems.',
     },
     {
-      icon: Network,
+      icon: Cpu,
       title: 'Engineering Informatics',
       description:
         'Engineering Informatics is evolving through Artificial Intelligence, Agentic Systems, Generative AI, Digital Twins, Cyber-Physical Systems, Robotics, Industrial IoT, Extended Reality, and cybersecurity.',
     },
     {
-      icon: Factory,
+      icon: Network,
       title: 'Multidisciplinary Focus',
       description:
         'The conference emphasizes intelligent, autonomous, human-centric, and sustainable engineering systems and provides a multidisciplinary platform connecting electrical, mechanical, civil, computer, and industrial engineering.',

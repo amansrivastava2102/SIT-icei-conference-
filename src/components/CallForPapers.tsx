@@ -70,7 +70,7 @@ const CallForPapers = () => {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6">Publication & Awards</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Publication & Awards</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <span className="text-blue-300 font-bold text-xl mt-1">✓</span>
@@ -92,7 +92,7 @@ const CallForPapers = () => {
             </div>
             <div className="text-center md:text-right">
               <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
-                <h4 className="text-2xl font-bold mb-4">Submit via EasyChair</h4>
+                <h4 className="text-2xl font-bold text-white mb-4">Submit via EasyChair</h4>
                 <p className="text-blue-100 mb-6">
                   Use our official submission portal for a streamlined review process
                 </p>

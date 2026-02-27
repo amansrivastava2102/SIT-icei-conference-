@@ -29,7 +29,7 @@ const Venue = () => {
             transition={{ duration: 0.6 }}
           >
             <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-8 md:p-10 text-white shadow-2xl">
-              <h3 className="text-3xl font-bold mb-8">Conference Venue</h3>
+              <h3 className="text-3xl font-bold text-white mb-8">Conference Venue</h3>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -37,7 +37,7 @@ const Venue = () => {
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Address</h4>
+                    <h4 className="font-semibold text-lg text-white mb-2">Address</h4>
                     <p className="text-blue-100 leading-relaxed">
                       Symbiosis Institute of Technology, Pune<br />
                       Lavale, Mulshi<br />
@@ -52,7 +52,7 @@ const Venue = () => {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Phone</h4>
+                    <h4 className="font-semibold text-lg text-white mb-2">Phone</h4>
                     <p className="text-blue-100">+91-20-3911-6000</p>
                     <p className="text-blue-100">+91-20-3911-6001</p>
                   </div>
@@ -63,7 +63,7 @@ const Venue = () => {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Email</h4>
+                    <h4 className="font-semibold text-lg text-white mb-2">Email</h4>
                     <p className="text-blue-100">icei2026@sitpune.edu.in</p>
                     <p className="text-blue-100">conference@sitpune.edu.in</p>
                   </div>
@@ -71,10 +71,10 @@ const Venue = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Globe className="w-6 h-6" />
                   </div>
+                    <Globe className="w-6 h-6" />
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">Website</h4>
+                    <h4 className="font-semibold text-lg text-white mb-2">Website</h4>
                     <p className="text-blue-100">www.sitpune.edu.in</p>
                   </div>
                 </div>

@@ -29,7 +29,7 @@ const Footer = () => {
                 SIT
               </div>
               <div>
-                <h3 className="font-bold text-xl">ICEI 2026</h3>
+                <h3 className="font-bold text-white text-xl">ICEI 2026</h3>
                 <p className="text-sm text-blue-200">IEEE Conference</p>
               </div>
             </div>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Quick Links</h4>
+            <h4 className="font-bold text-white text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Resources</h4>
+            <h4 className="font-bold text-lg text-white mb-6">Resources</h4>
             <ul className="space-y-3">
               {resources.map((resource, index) => (
                 <li key={index}>
@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-6">Contact Us</h4>
+            <h4 className="font-bold text-lg text-white mb-6">Contact Us</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />

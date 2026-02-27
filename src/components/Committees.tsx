@@ -6,7 +6,7 @@ const Committees = () => {
     {
       title: 'Patron(s)',
       icon: Award,
-      color: 'from-purple-600 to-purple-700',
+      color: 'from-blue-900 to-blue-700',
       members: [
         {
           name: 'Prof. (Dr.) S. B. Mujumdar',
@@ -26,7 +26,7 @@ const Committees = () => {
     {
       title: 'General Chair(s)',
       icon: Users,
-      color: 'from-blue-600 to-white',
+      color: 'from-blue-900 to-blue-700',
       members: [
         {
           name: 'Prof. (Dr.) Ketan Kotecha',
@@ -44,7 +44,7 @@ const Committees = () => {
     {
       title: 'Conference Chair(s)',
       icon: UserCircle,
-      color: 'from-blue-700 to-white',
+      color: 'from-blue-900 to-blue-700',
       members: [
         {
           name: 'Asc/Prof. Greg Adamson',
@@ -66,7 +66,7 @@ const Committees = () => {
     {
       title: 'Secretarial Committee',
       icon: Briefcase,
-      color: 'from-blue-800 to-white',
+      color: 'from-blue-900 to-blue-700',
       members: [
         {
           name: 'To Be Announced',
@@ -111,7 +111,7 @@ const Committees = () => {
                 <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
                   <committee.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-2xl font-bold">{committee.title}</h3>
+                <h3 className="text-2xl text-white font-bold">{committee.title}</h3>
               </div>
 
               <div className="p-6">

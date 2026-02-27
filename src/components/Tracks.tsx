@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { Factory, HeartPulse, DollarSign, Radio, Boxes, Shield } from 'lucide-react';
+import { Cpu, HeartPulse, Radio, Boxes, Shield, TrendingUp } from 'lucide-react';
 
 const Tracks = () => {
   const tracks = [
     {
-      icon: Factory,
+      icon: TrendingUp,
       title: 'Track 1: Agentic and Generative AI for Autonomous Industry 4.0',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-blue-800 to-blue-900',
       topics: [
         'Autonomous industrial agents',
         'Generative digital twins and virtual factories',
@@ -20,7 +20,7 @@ const Tracks = () => {
     {
       icon: HeartPulse,
       title: 'Track 2: Agentic and Generative AI for Cognitive Healthcare Informatics',
-      color: 'from-blue-600 to-blue-700',
+      color: 'from-blue-800 to-blue-900',
       topics: [
         'Clinical decision-support agents',
         'Generative AI for diagnostics and medical imaging',
@@ -32,9 +32,9 @@ const Tracks = () => {
     },
 
     {
-      icon: DollarSign,
+      icon: Cpu,
       title: 'Track 3: Agentic and Generative AI for Smart Financial and Economic Systems',
-      color: 'from-blue-700 to-blue-800',
+      color: 'from-blue-800 to-blue-900',
       topics: [
         'Autonomous trading and portfolio agents',
         'Generative financial scenario modelling',
@@ -65,7 +65,7 @@ const Tracks = () => {
     {
       icon: Boxes,
       title: 'Track 5: Agentic and Generative AI for Smart IoT, Cyber-Physical, and Urban Systems',
-      color: 'from-blue-900 to-blue-950',
+      color: 'from-blue-800 to-blue-900',
       topics: [
         'Multi-agent IoT and cyber-physical coordination',
         'Generative AI for sensor fusion, prediction, and optimization',
@@ -82,7 +82,7 @@ const Tracks = () => {
     {
       icon: Shield,
       title: 'Cross-Cutting Track: Responsible, Trustworthy, and Human-Centric Agentic AI',
-      color: 'from-blue-600 to-blue-800',
+      color: 'from-blue-800 to-blue-900',
       topics: [
         'Explainable, interpretable, and verifiable AI agents',
         'AI safety, robustness, and resilience engineering',
