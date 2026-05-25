@@ -1,12 +1,21 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
     { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
+
+    {
+      label: "About Us",
+      dropdown: [
+        { label: "The Institute", href: "#institute" },
+        { label: "The University", href: "#university" },
+        { label: "About Pune", href: "#Pune" },
+      ],
+    },
+
     { label: "Committees", href: "#committees" },
     { label: "Places", href: "#places" },
     { label: "For Authors", href: "#authors" },
@@ -43,28 +52,55 @@ const Navbar = () => {
           {/* CENTER NAVIGATION */}
           <div className="hidden lg:flex flex-1 justify-center items-center">
 
-            {/* REDUCED GAP */}
             <div className="flex items-center gap-5 xl:gap-6">
 
               {menuItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-[14px] md:text-[15px] font-medium text-gray-800 hover:text-[#1E3A8A] whitespace-nowrap transition-colors duration-300"
-                >
-                  {item.label}
-                </a>
+                <div key={item.label} className="relative group">
+
+                  {/* NORMAL LINK */}
+                  {!item.dropdown ? (
+                    <a
+                      href={item.href}
+                      className="text-[14px] md:text-[15px] font-medium text-gray-800 hover:text-[#1E3A8A] whitespace-nowrap transition-colors duration-300"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <>
+                      {/* DROPDOWN BUTTON */}
+                      <button className="flex items-center gap-1 text-[14px] md:text-[15px] font-medium text-gray-800 hover:text-[#1E3A8A] whitespace-nowrap transition-colors duration-300">
+                        {item.label}
+                        <ChevronDown className="w-4 h-4" />
+                      </button>
+
+                      {/* DROPDOWN MENU */}
+                      <div className="absolute top-full left-0 mt-3 w-56 bg-white shadow-xl rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+
+                        {item.dropdown.map((subItem) => (
+                          <a
+                            key={subItem.label}
+                            href={subItem.href}
+                            className="block px-5 py-4 text-gray-700 hover:bg-gray-50 hover:text-[#1E3A8A] transition-colors duration-200"
+                          >
+                            {subItem.label}
+                          </a>
+                        ))}
+
+                      </div>
+                    </>
+                  )}
+                </div>
               ))}
 
               {/* SUBMIT BUTTON */}
               <a
-              href="https://easychair.org/account/signin?l=1462013209260267560.1779723204.90191373"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="ml-1 px-5 py-2.5 text-[13px] font-semibold text-white rounded-md bg-gradient-to-r from-[#1E3A8A] to-blue-600 shadow hover:shadow-md transition-all duration-300 whitespace-nowrap"
+                href="https://easychair.org/account/signin?l=1462013209260267560.1779723204.90191373"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-1 px-5 py-2.5 text-[13px] font-semibold text-white rounded-md bg-gradient-to-r from-[#1E3A8A] to-blue-600 shadow hover:shadow-md transition-all duration-300 whitespace-nowrap"
               >
                 Submit Paper
-                </a>
+              </a>
 
             </div>
           </div>
@@ -111,22 +147,48 @@ const Navbar = () => {
           <div className="px-4 py-4 space-y-2">
 
             {menuItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block px-3 py-2 text-gray-800 hover:bg-gray-50 rounded-md"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </a>
+              <div key={item.label}>
+
+                {!item.dropdown ? (
+                  <a
+                    href={item.href}
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-50 rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <>
+                    <div className="px-3 py-2 font-medium text-gray-800">
+                      {item.label}
+                    </div>
+
+                    <div className="ml-4 space-y-1">
+                      {item.dropdown.map((subItem) => (
+                        <a
+                          key={subItem.label}
+                          href={subItem.href}
+                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-md"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {subItem.label}
+                        </a>
+                      ))}
+                    </div>
+                  </>
+                )}
+
+              </div>
             ))}
 
-            <button
-              className="mt-3 w-full px-4 py-3 text-sm font-semibold text-white rounded-md bg-gradient-to-r from-[#1E3A8A] to-blue-600 shadow-sm"
-              onClick={() => setIsMobileMenuOpen(false)}
+            <a
+              href="https://easychair.org/account/signin?l=1462013209260267560.1779723204.90191373"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block w-full text-center px-4 py-3 text-sm font-semibold text-white rounded-md bg-gradient-to-r from-[#1E3A8A] to-blue-600 shadow-sm"
             >
               Submit Paper
-            </button>
+            </a>
 
           </div>
         </div>
