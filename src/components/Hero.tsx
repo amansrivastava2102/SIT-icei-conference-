@@ -65,12 +65,14 @@ const Hero = () => {
             <div>
               <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/25 text-xs sm:text-sm tracking-[0.24em] uppercase text-gray-100">
                 IEEE Conference #71994
+
               </span>
             </div>
 
             {/* TITLE */}
             <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-white uppercase leading-tight tracking-wide">
               ICEI 2026: IEEE Conference on Engineering Informatics
+          
             </h1>
 
             {/* SUB THEME */}
