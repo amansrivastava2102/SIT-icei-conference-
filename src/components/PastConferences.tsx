@@ -39,7 +39,7 @@ const PastConferences = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Past ICEI Conferences
+            ICEI Conferences Series
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -55,42 +55,67 @@ const PastConferences = () => {
             {conferences.map((conf, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                initial={{ opacity: 0, x: index === 1 ? 30 : -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className={`flex items-center ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  index === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
                 } flex-col gap-8`}
               >
-                {/* LEFT SIDE */}
-                <div className="flex-1 md:text-right text-center">
-                  {index % 2 === 0 && (
-                    <a
-                      href={conf.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100 cursor-pointer">
-                        <div className="flex items-center justify-end space-x-4 mb-4">
-                          <div>
-                            <h3 className="text-3xl font-bold text-blue-900">
-                              ICEI {conf.year}
-                            </h3>
-                            <p className="text-lg font-semibold text-gray-700 mt-2">
-                              {conf.location}
-                            </p>
-                            <p className="text-gray-600">{conf.country}</p>
-                          </div>
 
+                {/* CONTENT CARD */}
+                <div
+                  className={`flex-1 ${
+                    index === 1 ? 'md:text-left' : 'md:text-right'
+                  } text-center`}
+                >
+                  <a
+                    href={conf.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100 cursor-pointer">
+
+                      <div
+                        className={`flex items-center ${
+                          index === 1 ? 'justify-start' : 'justify-end'
+                        } space-x-4 mb-4`}
+                      >
+
+                        {/* ICON LEFT FOR 2024 */}
+                        {index === 1 && (
                           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
                             <conf.icon className="w-6 h-6 text-white" />
                           </div>
+                        )}
+
+                        {/* TEXT */}
+                        <div>
+                          <h3 className="text-3xl font-bold text-blue-900">
+                            ICEI {conf.year}
+                          </h3>
+
+                          <p className="text-lg font-semibold text-gray-700 mt-2">
+                            {conf.location}
+                          </p>
+
+                          <p className="text-gray-600">
+                            {conf.country}
+                          </p>
                         </div>
+
+                        {/* ICON RIGHT FOR OTHERS */}
+                        {index !== 1 && (
+                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
+                            <conf.icon className="w-6 h-6 text-white" />
+                          </div>
+                        )}
+
                       </div>
-                    </a>
-                  )}
+                    </div>
+                  </a>
                 </div>
 
                 {/* CENTER DOT */}
@@ -98,41 +123,15 @@ const PastConferences = () => {
                   <div className="w-6 h-6 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
                 </div>
 
-                {/* RIGHT SIDE */}
-                <div className="flex-1 md:text-left text-center">
-                  {index % 2 !== 0 && (
-                    <a
-                      href={conf.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 border border-gray-100 cursor-pointer">
-                        <div className="flex items-center justify-start space-x-4 mb-4">
-                          <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
-                            <conf.icon className="w-6 h-6 text-white" />
-                          </div>
+                {/* EMPTY SIDE */}
+                <div className="flex-1"></div>
 
-                          <div>
-                            <h3 className="text-3xl font-bold text-blue-900">
-                              ICEI {conf.year}
-                            </h3>
-                            <p className="text-lg font-semibold text-gray-700 mt-2">
-                              {conf.location}
-                            </p>
-                            <p className="text-gray-600">{conf.country}</p>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  )}
-                </div>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* IEEE section */}
+        {/* IEEE SECTION */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,13 +140,14 @@ const PastConferences = () => {
           className="mt-16 text-center bg-blue-900 text-white rounded-2xl p-8"
         >
           <BookOpen className="w-12 h-12 mx-auto mb-4" />
+
           <h3 className="text-2xl font-bold text-white mb-4">
             Published in IEEE Xplore
           </h3>
 
           <p className="text-blue-100 max-w-2xl mx-auto">
-            All proceedings from past ICEI conferences are published and indexed in IEEE Xplore Digital Library,
-            ensuring global visibility and citation.
+            All proceedings from past ICEI conferences are published and indexed
+            in IEEE Xplore Digital Library, ensuring global visibility and citation.
           </p>
         </motion.div>
 

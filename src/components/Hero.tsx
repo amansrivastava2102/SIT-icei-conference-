@@ -95,7 +95,7 @@ const Hero = () => {
 
               <p>
                 <span className="font-bold">Technically Co-Sponsored by:</span>{" "}
-                IEEE Maharashtra Section
+                IEEE Maharashtra Section (Hybrid Section)
               </p>
             </div>
 
