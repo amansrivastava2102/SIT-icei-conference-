@@ -45,6 +45,7 @@ function App() {
 
         {/* HOME PAGE */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
 
         {/* INSTITUTE PAGE */}
         <Route path="/institute" element={<Institute />} />

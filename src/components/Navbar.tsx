@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "Home", href: "#home" },
+    { label: "Home", href: "/home" },
 
     {
       label: "About Us",
@@ -94,7 +94,7 @@ const Navbar = () => {
 
               {/* SUBMIT BUTTON */}
               <a
-                href="https://easychair.org/account/signin?l=1462013209260267560.1779723204.90191373"
+                href="https://easychair.org/account/signin?l=2539165230043744914.1779736227.7d7eea40"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ml-1 px-5 py-2.5 text-[13px] font-semibold text-white rounded-md bg-gradient-to-r from-[#1E3A8A] to-blue-600 shadow hover:shadow-md transition-all duration-300 whitespace-nowrap"
