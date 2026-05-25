@@ -96,10 +96,19 @@ const CallForPapers = () => {
                 <p className="text-blue-100 mb-6">
                   Use our official submission portal for a streamlined review process
                 </p>
-                <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 inline-flex items-center space-x-2 shadow-xl">
-                  <span>Submit on EasyChair</span>
-                  <ExternalLink className="w-5 h-5" />
-                </button>
+                
+                <a
+                href="https://easychair.org/account/signin?l=1462013209260267560.1779723204.90191373"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                  <button className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 inline-flex items-center space-x-2 shadow-xl">
+                    <span>Submit on EasyChair</span>
+                    <ExternalLink className="w-5 h-5" />
+                    </button>
+                    </a>
+
+
               </div>
             </div>
           </div>
