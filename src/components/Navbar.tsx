@@ -10,8 +10,8 @@ const Navbar = () => {
     {
       label: "About Us",
       dropdown: [
-        { label: "The Institute", href: "#institute" },
-        { label: "The University", href: "#university" },
+        { label: "The Institute", href: "/institute" },
+        { label: "The University", href: "/university" },
         { label: "About Pune", href: "#Pune" },
       ],
     },

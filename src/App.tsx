@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,8 +14,10 @@ import Sponsorship from './components/Sponsorship';
 import Committees from './components/Committees';
 import Venue from './components/Venue';
 import Footer from './components/Footer';
+import Institute from './components/Institute';
+import University from './components/University';
 
-function App() {
+function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -31,6 +35,24 @@ function App() {
       <Venue />
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+
+        {/* HOME PAGE */}
+        <Route path="/" element={<HomePage />} />
+
+        {/* INSTITUTE PAGE */}
+        <Route path="/institute" element={<Institute />} />
+
+        <Route path="/university" element={<University />} /> 
+        
+      </Routes>
+    </Router>
   );
 }
 
