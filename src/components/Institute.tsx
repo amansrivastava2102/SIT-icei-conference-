@@ -96,12 +96,12 @@ const Institute = () => {
               </p>
 
               <p className="mt-4 text-xl">
-                Phone: +91 020 6193 6300 | Email:{" "}
+                Phone: +91 8058940685 | +91 9398380598 Email:{" "}
                 <a
-                  href="mailto:info@sitpune.edu.in"
+                  href="mailto:aditi.sharma@sitpune.edu.in"
                   className="text-blue-600 underline"
                 >
-                  info@sitpune.edu.in
+                  aditi.sharma@sitpune.edu.in
                 </a>
               </p>
             </div>

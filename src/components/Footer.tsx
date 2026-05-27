@@ -83,15 +83,14 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-300">icei2026@sitpune.edu.in</p>
-                  <p className="text-sm text-gray-300">conference@sitpune.edu.in</p>
+                  <p className="text-sm text-gray-300">aditi.sharma@sitpune.edu.in</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-300">+91-20-3911-6000</p>
-                  <p className="text-sm text-gray-300">+91-20-3911-6001</p>
+                  <p className="text-sm text-gray-300">+91 8058940685 | +91 9398380598</p>
+                  <p className="text-sm text-gray-300">+91 8058940685 | +91 9398380598</p>
                 </div>
               </div>
             </div>
