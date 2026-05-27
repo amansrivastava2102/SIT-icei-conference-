@@ -98,7 +98,7 @@ const CallForPapers = () => {
                 </p>
                 
                 <a
-                href="https://easychair.org/account/signin?l=2539165230043744914.1779736227.7d7eea40"
+                href="https://easychair.org/conferences/?conf=icei2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
