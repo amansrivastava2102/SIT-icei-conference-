@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import {
   Calendar,
   Send,
-  CheckCircle,
-  Upload,
-  CreditCard,
+  Ticket,
+  FileUp,
+  ClipboardCheck,
   Presentation,
 } from 'lucide-react';
 
@@ -12,51 +12,43 @@ const ImportantDates = () => {
   const dates = [
     {
       icon: Send,
-      title: 'Paper Submission Start',
-      date: '1 March 2026',
+      title: 'Paper submission deadline',
+      date: '10th August 2026',
       description: 'Paper submission portal opens for ICEI 2026.',
       color: 'from-blue-500 to-blue-600',
     },
     {
-      icon: Upload,
-      title: 'Submission Due',
-      date: '30 June 2026',
+      icon: Calendar,
+      title: 'Notification Date',
+      date: '30th September 2026',
       description: 'Submission deadline for initial review.',
       color: 'from-blue-600 to-blue-700',
     },
     {
-      icon: CheckCircle,
-      title: 'Acceptance',
-      date: '31 July 2026',
+      icon: Ticket,
+      title: 'Super Early Bird Registration',
+      date: '10th July 2026',
       description: 'Notification of first round acceptance.',
       color: 'from-blue-700 to-blue-800',
     },
     {
-      icon: Upload,
-      title: 'Camera Ready Paper Submission',
-      date: '31 August 2026',
+      icon: FileUp,
+      title: 'Early Bird Registration',
+      date: '10th August 2026',
       description: 'Camera Ready submission deadline after revisions.',
       color: 'from-blue-800 to-blue-900',
     },
     {
-      icon: CheckCircle,
-      title: 'Final Acceptance',
-      date: '30 September 2026',
+      icon: ClipboardCheck,
+      title: 'Registration Deadline',
+      date: '10th November 2026',
       description: 'Final acceptance notification to authors.',
       color: 'from-blue-900 to-blue-950',
     },
     {
-      icon: CreditCard,
-      title: 'Registration Calls',
-      date: 'August & October 2026',
-      description:
-        'Registration calls and announcements in August and October 2026.',
-      color: 'from-blue-600 to-blue-700',
-    },
-    {
       icon: Presentation,
       title: 'Conference Days',
-      date: '27–28 November 2026',
+      date: '4-5 December 2026',
       description: 'ICEI 2026 Conference at SIT Pune',
       color: 'from-green-600 to-green-700',
       highlight: true,
@@ -70,9 +62,11 @@ const ImportantDates = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <Calendar className="w-16 h-16 mx-auto mb-6 text-blue-900" />
+
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Important Dates
           </h2>
+
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Mark your calendar with these key milestones for ICEI 2026
           </p>
@@ -142,9 +136,11 @@ const Card = ({ item }: any) => (
     <h3 className="text-xl font-bold text-gray-900 mb-2">
       {item.title}
     </h3>
+
     <p className="text-2xl font-bold text-blue-900 mb-2">
       {item.date}
     </p>
+
     <p className="text-gray-600">
       {item.description}
     </p>

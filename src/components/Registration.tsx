@@ -3,34 +3,45 @@ import { motion } from 'framer-motion';
 const Registration = () => {
   const fees = [
     {
-      category: 'Author Registration',
-      description: 'For presenting authors (per paper)',
-      early: '₹12,000 / AUD 218',
-      regular: '₹15,000 / AUD 273',
+      no: '1',
+      description: 'Author/Presenter (Full Registration)',
+      earlyIEEE: '₹14,160 / AUD 250',
+      earlyNonIEEE: '₹15,500 / AUD 274',
+      ieee: '₹15,500 / AUD 274',
+      nonIEEE: '₹16,600 / AUD 293',
     },
     {
-      category: 'Industry Participant',
-      description: 'For industry professionals',
-      early: '₹15,000 / AUD 273',
-      regular: '₹18,000 / AUD 327',
+      no: '2',
+      description: 'Industry Registration (non-author)',
+      earlyIEEE: '₹7,100 / AUD 125',
+      earlyNonIEEE: '₹8,300 / AUD 146',
+      ieee: '₹8,300 / AUD 146',
+      nonIEEE: '₹9,500 / AUD 168',
     },
     {
-      category: 'Academia Participant',
-      description: 'For faculty and researchers',
-      early: '₹10,000 / AUD 182',
-      regular: '₹12,000 / AUD 218',
+      no: '3',
+      description: 'Academia Registration (co-author/non-author)',
+      earlyIEEE: '₹6,000 / AUD 106',
+      earlyNonIEEE: '₹7,100 / AUD 125',
+      ieee: '₹7,100 / AUD 125',
+      nonIEEE: '₹8,300 / AUD 146',
     },
     {
-      category: 'Student (Individual)',
-      description: 'For individual students with valid ID',
-      early: '₹5,000 / AUD 91',
-      regular: '₹6,000 / AUD 109',
+      no: '4',
+      description: 'Students attendee',
+      earlyIEEE: '-',
+      earlyNonIEEE: '-',
+      ieee: '₹2,500 / AUD 44',
+      nonIEEE: '₹3,600 / AUD 64',
     },
     {
-      category: 'Student Group (5+)',
-      description: 'Group discount for 5 or more students',
-      early: '₹4,000 / AUD 73',
-      regular: '₹5,000 / AUD 91',
+      no: '5',
+      description:
+        'Group of 5 or more Student Attendees from the same institute (Discounted registration fee)',
+      earlyIEEE: '-',
+      earlyNonIEEE: '-',
+      ieee: '₹2,125 / AUD 38',
+      nonIEEE: '₹3,060 / AUD 54',
     },
   ];
 
@@ -68,40 +79,73 @@ const Registration = () => {
           className="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden"
         >
           <div className="overflow-x-auto">
-            <table className="min-w-full text-sm md:text-base">
+            <table className="min-w-full text-sm md:text-base border-collapse">
+
               <thead className="bg-[#1E3A8A] text-white">
                 <tr>
-                  <th className="px-4 md:px-6 py-3 text-left font-semibold">Category</th>
-                  <th className="px-4 md:px-6 py-3 text-left font-semibold">Description</th>
-                  <th className="px-4 md:px-6 py-3 text-left font-semibold">Early Bird</th>
-                  <th className="px-4 md:px-6 py-3 text-left font-semibold">Regular</th>
+                  <th className="px-4 py-4 border border-white/20 font-semibold">
+                    No
+                  </th>
+
+                  <th className="px-6 py-4 border border-white/20 font-semibold min-w-[280px]">
+                    Description
+                  </th>
+
+                  <th className="px-4 py-4 border border-white/20 font-semibold min-w-[180px]">
+                    Early Bird
+                    <br />
+                    (IEEE Member)
+                  </th>
+
+                  <th className="px-4 py-4 border border-white/20 font-semibold min-w-[190px]">
+                    Early Bird
+                    <br />
+                    (Non-IEEE Member)
+                  </th>
+
+                  <th className="px-4 py-4 border border-white/20 font-semibold min-w-[160px]">
+                    IEEE Member
+                  </th>
+
+                  <th className="px-4 py-4 border border-white/20 font-semibold min-w-[170px]">
+                    Non-IEEE Member
+                  </th>
                 </tr>
               </thead>
 
               <tbody>
                 {fees.map((fee, index) => (
                   <tr
-                    key={fee.category}
+                    key={fee.no}
                     className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
                   >
-                    <td className="px-4 md:px-6 py-3 font-semibold text-gray-900">
-                      {fee.category}
+                    <td className="px-4 py-4 border border-gray-200 text-center font-semibold text-gray-900">
+                      {fee.no}
                     </td>
 
-                    <td className="px-4 md:px-6 py-3 text-gray-700">
+                    <td className="px-6 py-4 border border-gray-200 text-gray-800 font-medium">
                       {fee.description}
                     </td>
 
-                    <td className="px-4 md:px-6 py-3 font-medium text-gray-900">
-                      {fee.early}
+                    <td className="px-4 py-4 border border-gray-200 text-center text-gray-900 font-medium">
+                      {fee.earlyIEEE}
                     </td>
 
-                    <td className="px-4 md:px-6 py-3 font-medium text-gray-900">
-                      {fee.regular}
+                    <td className="px-4 py-4 border border-gray-200 text-center text-gray-900 font-medium">
+                      {fee.earlyNonIEEE}
+                    </td>
+
+                    <td className="px-4 py-4 border border-gray-200 text-center text-gray-900 font-medium">
+                      {fee.ieee}
+                    </td>
+
+                    <td className="px-4 py-4 border border-gray-200 text-center text-gray-900 font-medium">
+                      {fee.nonIEEE}
                     </td>
                   </tr>
                 ))}
               </tbody>
+
             </table>
           </div>
         </motion.div>

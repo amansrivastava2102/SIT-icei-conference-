@@ -12,13 +12,13 @@ const Navbar = () => {
       dropdown: [
         { label: "The Institute", href: "/institute" },
         { label: "The University", href: "/university" },
-        { label: "About Pune", href: "/Pune" },
+        { label: "About Pune", href: "/About-Pune" },
       ],
     },
 
     { label: "Committees", href: "#committees" },
     { label: "Places", href: "#places" },
-    { label: "For Authors", href: "#authors" },
+    { label: "For Authors", href: "/authors" },
   ];
 
   return (
@@ -37,14 +37,14 @@ const Navbar = () => {
             <img
               src="/images/logos/logo1.png"
               alt="SIT Pune"
-              className="h-14 md:h-[90px] w-auto object-contain"
+              className="h-14 md:h-[85px] w-auto object-contain"
             />
 
             {/* LOGO 5 */}
             <img
               src="/images/logos/logo5.png"
               alt="SIT Pune 1"
-              className="h-12 md:h-[70px] w-auto object-contain"
+              className="h-12 md:h-[65px] w-auto object-contain"
             />
 
           </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
 
           {/* RIGHT LOGOS */}
-          <div className="hidden lg:flex items-center gap-5 flex-shrink-0 ml-4">
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0 ml-4">
 
             {/* SWINBURNE */}
             <img
@@ -120,6 +120,12 @@ const Navbar = () => {
               src="/images/logos/logo2.png"
               alt="Conference Logo"
               className="h-12 md:h-16 w-auto object-contain"
+            />
+
+            <img
+              src="/images/logos/logo6.jpg"
+              alt="SSIT Logo"
+              className="h-12 md:h-12 w-auto object-contain"
             />
 
             {/* IEEE */}

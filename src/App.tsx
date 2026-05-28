@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import PastConferences from './components/PastConferences';
-import ConferenceFormat from './components/ConferenceFormat';
 import Tracks from './components/Tracks';
 import Attendees from './components/Attendees';
 import CallForPapers from './components/CallForPapers';
@@ -14,22 +13,42 @@ import Sponsorship from './components/Sponsorship';
 import Committees from './components/Committees';
 import Venue from './components/Venue';
 import Footer from './components/Footer';
+
 import Institute from './components/Institute';
 import University from './components/University';
+import ForAuthors from './components/ForAuthors';
+import AboutPune from './components/AboutPune';
 
 function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+
+      {/* HERO */}
       <Hero />
+
+      {/* 1. ABOUT */}
       <About />
-      <PastConferences />
-      <ConferenceFormat />
-      <Tracks />
-      <Attendees />
+
+      {/* 2. CALL FOR PAPERS */}
       <CallForPapers />
+
+      {/* 3. TRACKS */}
+      <Tracks />
+
+      {/* 4. IMPORTANT DATES */}
       <ImportantDates />
+
+      {/* 5. REGISTRATION */}
       <Registration />
+
+      {/* 6. WHO WILL ATTEND */}
+      <Attendees />
+
+      {/* 7. ICEI CONFERENCE SERIES */}
+      <PastConferences />
+
+      {/* REMAINING */}
       <Sponsorship />
       <Committees />
       <Venue />
@@ -50,8 +69,15 @@ function App() {
         {/* INSTITUTE PAGE */}
         <Route path="/institute" element={<Institute />} />
 
-        <Route path="/university" element={<University />} /> 
-        
+        {/* UNIVERSITY PAGE */}
+        <Route path="/university" element={<University />} />
+
+        {/* FOR AUTHORS PAGE */}
+        <Route path="/authors" element={<ForAuthors />} />
+
+        {/* ABOUT PUNE PAGE */}
+        <Route path="/about-pune" element={<AboutPune />} />
+
       </Routes>
     </Router>
   );

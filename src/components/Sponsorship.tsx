@@ -129,11 +129,11 @@ const Sponsorship = () => {
               <p className="text-gray-700">Experts</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">100+</div>
               <p className="text-gray-700">Research Papers</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-900 mb-2">15+</div>
+              <div className="text-4xl font-bold text-blue-900 mb-2">50+</div>
               <p className="text-gray-700">Countries</p>
             </div>
             <div className="text-center">
