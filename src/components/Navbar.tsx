@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between min-h-[90px] py-2">
 
           {/* LEFT — LOGOS */}
-          <div className="flex items-center gap-3 lg:gap-3 flex-shrink">
+          <div className="flex items-center gap-3 lg:gap-1 flex-shrink">
 
             {/* LOGO 1 */}
             <img
@@ -44,7 +44,7 @@ const Navbar = () => {
             <img
               src="/images/logos/logo5.png"
               alt="SIT Pune 1"
-              className="h-12 md:h-[65px] w-auto object-contain"
+              className="h-12 md:h-[60px] w-auto object-contain"
             />
 
           </div>
