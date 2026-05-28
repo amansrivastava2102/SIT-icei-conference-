@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { label: "Home", href: "/home" },
+    { label: "Home", href: "/" },
 
     {
       label: "About Us",

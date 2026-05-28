@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-
+import Footer from './Footer';
 const Institute = () => {
   return (
     <>
@@ -109,6 +109,7 @@ const Institute = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

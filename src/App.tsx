@@ -13,7 +13,6 @@ import Sponsorship from './components/Sponsorship';
 import Committees from './components/Committees';
 import Venue from './components/Venue';
 import Footer from './components/Footer';
-
 import Institute from './components/Institute';
 import University from './components/University';
 import ForAuthors from './components/ForAuthors';
@@ -77,7 +76,9 @@ function App() {
 
         {/* ABOUT PUNE PAGE */}
         <Route path="/about-pune" element={<AboutPune />} />
-
+        
+        <Route path="/committees" element={<Committees />} />
+        
       </Routes>
     </Router>
   );

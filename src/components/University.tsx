@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-
+import Footer from './Footer';
 const University = () => {
   return (
     <>
@@ -115,6 +115,7 @@ const University = () => {
           </div>
         </div>
       </div>
+    <Footer />
     </>
   );
 };

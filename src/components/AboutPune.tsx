@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-
+import Footer from './Footer';
 const AboutPune = () => {
   const places = [
     {
@@ -154,6 +154,7 @@ const AboutPune = () => {
 
         </div>
       </div>
+      <Footer />
     </>
   );
 };
