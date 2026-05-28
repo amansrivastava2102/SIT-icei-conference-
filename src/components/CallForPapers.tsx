@@ -114,8 +114,7 @@ const CallForPapers = () => {
           </div>
         </motion.div>
 
-        tsx
-```tsx
+  
 <motion.div
   initial={{ opacity: 0, y: 20 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -123,7 +122,7 @@ const CallForPapers = () => {
   transition={{ duration: 0.6, delay: 0.4 }}
   className="mt-8 bg-white rounded-xl p-8 shadow-lg"
 >
-  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+  <h3 className="text-4xl font-bold text-gray-900 mb-6 text-center">
     Submission Guidelines
   </h3>
 

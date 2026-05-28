@@ -12,12 +12,12 @@ const Navbar = () => {
       dropdown: [
         { label: "The Institute", href: "/institute" },
         { label: "The University", href: "/university" },
-        { label: "About Pune", href: "/AboutPune" },
+        { label: "About Pune", href: "/about-Pune" },
       ],
     },
 
     { label: "Committees", href: "#committees" },
-    { label: "Places", href: "/AboutPune" },
+    { label: "Places", href: "/about-Pune" },
     { label: "For Authors", href: "/authors" },
   ];
 
