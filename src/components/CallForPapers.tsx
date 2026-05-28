@@ -98,7 +98,7 @@ const CallForPapers = () => {
                 </p>
                 
                 <a
-                href="https://easychair.org/conferences/?conf=icei2026"
+                href=" https://easychair.org/cfp/ICEI2026"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
@@ -114,51 +114,207 @@ const CallForPapers = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-8 bg-white rounded-xl p-8 shadow-lg"
-        >
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Submission Guidelines</h3>
-          <div className="grid md:grid-cols-2 gap-6 text-gray-700">
-            <div>
-              <h4 className="font-semibold text-lg mb-3 text-gray-900">Paper Format</h4>
-              <ul className="space-y-2">
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>6-8 pages (including references)</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>IEEE two-column format</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>PDF format only</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-3 text-gray-900">Review Process</h4>
-              <ul className="space-y-2">
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>Double-blind peer review</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>Minimum 3 reviewers per paper</span>
-                </li>
-                <li className="flex items-start space-x-2">
-                  <span className="text-blue-600 mt-1">•</span>
-                  <span>Accept/Reject with revision option</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
+        tsx
+```tsx
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+  className="mt-8 bg-white rounded-xl p-8 shadow-lg"
+>
+  <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+    Submission Guidelines
+  </h3>
+
+  <div className="space-y-8 text-gray-700">
+
+    <div>
+      <h4 className="text-xl font-semibold text-gray-900 mb-3">
+        Author Instructions
+      </h4>
+
+      <p className="mb-3">
+        Please comply with the following guidelines:
+      </p>
+
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          Submitted papers should be written in English, including all figures,
+          tables, references, and appendices.
+        </li>
+
+        <li>
+          The paper must discuss only new and previously unpublished results.
+        </li>
+
+        <li>
+          The paper must be formatted according to the IEEE Manuscript Templates
+          for Conference Proceedings.
+        </li>
+
+        <li>
+          The paper must have a minimum of four pages and must not exceed six
+          pages, including figures and references.
+        </li>
+
+        <li>
+          The paper must address at least one category specified in the Call for
+          Papers.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-semibold text-gray-900 mb-3">
+        Submit
+      </h4>
+
+      <p className="mb-3">
+        All submissions must be made through the Online Submission System (CMT)
+        using the following link:
+      </p>
+
+      <a
+        href="https://easychair.org/my/conference?conf=icei2026"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 hover:underline break-all"
+      >
+        https://easychair.org/my/conference?conf=icei2026
+      </a>
+
+      <p className="mt-3">
+        Submissions cannot be accepted via email.
+      </p>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-semibold text-gray-900 mb-3">
+        Submit Two Copies of Your Paper
+      </h4>
+
+      <div className="space-y-4">
+
+        <div>
+          <p className="font-semibold">
+            a) Complete Paper in PDF Format
+          </p>
+
+          <p>
+            Please submit the full paper in PDF format, including author names,
+            affiliations, and acknowledgments.
+          </p>
+        </div>
+
+        <div>
+          <p className="font-semibold">
+            b) Anonymized Paper in PDF Format
+          </p>
+
+          <p className="mb-2">
+            Submit a second version of your paper without any author names,
+            affiliations, or identifying information.
+          </p>
+
+          <p className="mb-2">
+            Prefix the file name with
+            <span className="font-medium"> Blind_ </span>
+            (e.g., Blind_PaperTitle.pdf).
+          </p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              Remove names from the title page, headers, and document body.
+            </li>
+
+            <li>
+              Replace self-references with neutral descriptions like:
+              "Previous work has shown..."
+            </li>
+
+            <li>
+              Remove acknowledgments that may reveal author identity.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-semibold text-gray-900 mb-3">
+        Additional Guidelines
+      </h4>
+
+      <div className="space-y-5">
+
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-1">
+            Originality Detection
+          </h5>
+
+          <p>
+            Authors must ensure that submissions are original and not previously
+            published or under consideration elsewhere. All papers will undergo
+            plagiarism and self-plagiarism checks.
+          </p>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-1">
+            Language Check
+          </h5>
+
+          <p>
+            Authors are encouraged to thoroughly check spelling and grammar
+            before submission.
+          </p>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-1">
+            Topic of Interest
+          </h5>
+
+          <p>
+            The paper content must align with the conference theme and scope.
+          </p>
+        </div>
+
+        <div>
+          <h5 className="font-semibold text-gray-900 mb-1">
+            Presentation
+          </h5>
+
+          <p>
+            Presentation at the conference is mandatory for all accepted papers.
+          </p>
+
+          <p className="mt-2">
+            Accepted, registered, and presented papers will be submitted to IEEE
+            for possible inclusion in IEEE Xplore®.
+          </p>
+
+          <p className="mt-2">
+            Each speaker will receive a 20-minute presentation slot including
+            Q&A.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h4 className="text-xl font-semibold text-gray-900 mb-3">
+        Contact for Queries
+      </h4>
+
+      <p>iceiagnei@sitpune.edu.in</p>
+      <p>aditi.sharma@sitpune.edu.in</p>
+    </div>
+
+  </div>
+</motion.div>
+
       </div>
     </section>
   );

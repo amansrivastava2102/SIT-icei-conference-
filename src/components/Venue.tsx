@@ -53,8 +53,8 @@ const Venue = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg text-white mb-2">Phone</h4>
-                    <p className="text-blue-100">+91-20-3911-6000</p>
-                    <p className="text-blue-100">+91-20-3911-6001</p>
+                    <p className="text-blue-100">+918058940685</p>
+                    <p className="text-blue-100">+919398380598</p>
                   </div>
                 </div>
 
@@ -64,8 +64,8 @@ const Venue = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg text-white mb-2">Email</h4>
-                    <p className="text-blue-100">icei2026@sitpune.edu.in</p>
-                    <p className="text-blue-100">conference@sitpune.edu.in</p>
+                    <p className="text-blue-100">iceiagnei@sitpune.edu.in</p>
+                    <p className="text-blue-100">aditi.sharma@sitpune.edu.in</p>
                   </div>
                 </div>
 

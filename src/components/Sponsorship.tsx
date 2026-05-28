@@ -154,9 +154,11 @@ const Sponsorship = () => {
           <p className="text-white mb-6 max-w-2xl mx-auto">
             We can create tailored sponsorship packages to meet your specific marketing and branding objectives
           </p>
-          <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300">
-            Contact Sponsorship Team
-          </button>
+          <a
+             href="mailto:iceiagnei@sitpune.edu.in"
+            className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 inline-block">
+             Contact Sponsorship Team
+          </a>
         </motion.div>
       </div>
     </section>

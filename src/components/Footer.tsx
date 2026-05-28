@@ -16,7 +16,7 @@ const Footer = () => {
     { label: 'IEEE Xplore', url: 'https://ieeexplore.ieee.org' },
     { label: 'IEEE Maharashtra Section', url: 'https://ieeemanipal.org' },
     { label: 'SIT Pune Website', url: 'https://www.sitpune.edu.in' },
-    { label: 'Paper Submission Portal', url: '#' },
+    { label: 'Paper Submission Portal', url: ' https://easychair.org/my/conference?conf=icei2026' },
   ];
 
   return (
@@ -83,13 +83,13 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-300">aditi.sharma@sitpune.edu.in</p>
+                 <p className="text-gray-300">iceiagnei@sitpune.edu.in</p>
+                 <p className="text-gray-300">aditi.sharma@sitpune.edu.in</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm text-gray-300">+91 8058940685 | +91 9398380598</p>
                   <p className="text-sm text-gray-300">+91 8058940685 | +91 9398380598</p>
                 </div>
               </div>

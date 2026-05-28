@@ -30,11 +30,11 @@ function HomePage() {
       {/* 1. ABOUT */}
       <About />
 
-      {/* 2. CALL FOR PAPERS */}
-      <CallForPapers />
-
-      {/* 3. TRACKS */}
+      {/* 2. TRACKS */}
       <Tracks />
+
+      {/* 3. CALL FOR PAPERS */}
+      <CallForPapers />
 
       {/* 4. IMPORTANT DATES */}
       <ImportantDates />
