@@ -11,7 +11,7 @@ const Institute = () => {
         <div
           className="relative h-[320px] bg-cover bg-center flex items-center justify-center"
           style={{
-            backgroundImage: "url('/images/campus/campus3.png')",
+            backgroundImage: "url('images/campus/campus3.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/40"></div>

@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 
 const slides = [
   {
-    src: "/images/campus/campus1.png",
+    src: "images/campus/campus1.png",
     alt: "Symbiosis Institute of Technology Campus 1",
   },
   {
-    src: "/images/campus/campus2.png",
+    src: "images/campus/campus2.png",
     alt: "Symbiosis Institute of Technology Campus 2",
   },
   {
-    src: "/images/campus/campus3.png",
+    src: "images/campus/campus3.png",
     alt: "Symbiosis Institute of Technology Campus 3",
   },
 ];

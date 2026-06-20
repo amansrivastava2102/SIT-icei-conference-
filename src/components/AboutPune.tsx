@@ -5,37 +5,37 @@ const AboutPune = () => {
   const places = [
     {
       title: 'Shaniwar Wada',
-      image: '/images/Pune/shaniwarwada.jpg',
+      image: 'images/Pune/shaniwarwada.jpg',
       description:
         'Shaniwar Wada is one of Pune’s most iconic historical landmarks and was the seat of the Peshwas of the Maratha Empire.',
     },
     {
       title: 'Aga Khan Palace',
-      image: '/images/Pune/agakhan.jpg',
+      image: 'images/Pune/agakhan.jpg',
       description:
         'Aga Khan Palace is a historic monument associated with Mahatma Gandhi and India’s freedom movement.',
     },
     {
       title: 'Sinhagad Fort',
-      image: '/images/Pune/sinhagadfort.jpg',
+      image: 'images/Pune/sinhagadfort.jpg',
       description:
         'Sinhagad Fort is a famous hill fortress near Pune known for its scenic beauty and historical significance.',
     },
     {
       title: 'Dagdusheth Ganpati',
-      image: '/images/Pune/dagdusheth.jpg',
+      image: 'images/Pune/dagdusheth.jpg',
       description:
         'Shreemant Dagdusheth Halwai Ganpati Temple is one of the most visited and revered temples in Maharashtra.',
     },
     {
       title: 'Lal Mahal',
-      image: '/images/Pune/lalmahal.jpg',
+      image: 'images/Pune/lalmahal.jpg',
       description:
         'Lal Mahal is a historic monument closely associated with Chhatrapati Shivaji Maharaj’s early life.',
     },
     {
       title: 'Rajiv Gandhi Zoological Park',
-      image: '/images/Pune/zoo.jpg',
+      image: 'images/Pune/zoo.jpg',
       description:
         'Rajiv Gandhi Zoological Park is a major wildlife attraction in Pune featuring diverse animal species and nature trails.',
     },
@@ -51,7 +51,7 @@ const AboutPune = () => {
         <div
           className="relative h-[260px] md:h-[360px] bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/Pune/pune.png')",
+            backgroundImage: "url('images/Pune/pune.png')",
           }}
         >
           <div className="absolute inset-0 bg-black/50" />

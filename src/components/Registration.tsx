@@ -1,47 +1,50 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Registration = () => {
+  const navigate = useNavigate();
+
   const fees = [
     {
-      no: '1',
-      description: 'Author/Presenter (Full Registration)',
-      earlyIEEE: '₹14,160 / AUD 250',
-      earlyNonIEEE: '₹15,500 / AUD 274',
-      ieee: '₹15,500 / AUD 274',
-      nonIEEE: '₹16,600 / AUD 293',
+      no: "1",
+      description: "Author/Presenter (Full Registration)",
+      earlyIEEE: "?14,160 / AUD 250",
+      earlyNonIEEE: "?15,500 / AUD 274",
+      ieee: "?15,500 / AUD 274",
+      nonIEEE: "?16,600 / AUD 293",
     },
     {
-      no: '2',
-      description: 'Industry Registration (non-author)',
-      earlyIEEE: '₹7,100 / AUD 125',
-      earlyNonIEEE: '₹8,300 / AUD 146',
-      ieee: '₹8,300 / AUD 146',
-      nonIEEE: '₹9,500 / AUD 168',
+      no: "2",
+      description: "Industry Registration (non-author)",
+      earlyIEEE: "?7,100 / AUD 125",
+      earlyNonIEEE: "?8,300 / AUD 146",
+      ieee: "?8,300 / AUD 146",
+      nonIEEE: "?9,500 / AUD 168",
     },
     {
-      no: '3',
-      description: 'Academia Registration (co-author/non-author)',
-      earlyIEEE: '₹6,000 / AUD 106',
-      earlyNonIEEE: '₹7,100 / AUD 125',
-      ieee: '₹7,100 / AUD 125',
-      nonIEEE: '₹8,300 / AUD 146',
+      no: "3",
+      description: "Academia Registration (co-author/non-author)",
+      earlyIEEE: "?6,000 / AUD 106",
+      earlyNonIEEE: "?7,100 / AUD 125",
+      ieee: "?7,100 / AUD 125",
+      nonIEEE: "?8,300 / AUD 146",
     },
     {
-      no: '4',
-      description: 'Students attendee',
-      earlyIEEE: '-',
-      earlyNonIEEE: '-',
-      ieee: '₹2,500 / AUD 44',
-      nonIEEE: '₹3,600 / AUD 64',
+      no: "4",
+      description: "Students Attendee",
+      earlyIEEE: "-",
+      earlyNonIEEE: "-",
+      ieee: "?2,500 / AUD 44",
+      nonIEEE: "?3,600 / AUD 64",
     },
     {
-      no: '5',
+      no: "5",
       description:
-        'Group of 5 or more Student Attendees from the same institute (Discounted registration fee)',
-      earlyIEEE: '-',
-      earlyNonIEEE: '-',
-      ieee: '₹2,125 / AUD 38',
-      nonIEEE: '₹3,060 / AUD 54',
+        "Group of 5 or more Student Attendees from the same institute (Discounted registration fee)",
+      earlyIEEE: "-",
+      earlyNonIEEE: "-",
+      ieee: "?2,125 / AUD 38",
+      nonIEEE: "?3,060 / AUD 54",
     },
   ];
 
@@ -117,7 +120,7 @@ const Registration = () => {
                 {fees.map((fee, index) => (
                   <tr
                     key={fee.no}
-                    className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
+                    className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}
                   >
                     <td className="px-4 py-4 border border-gray-200 text-center font-semibold text-gray-900">
                       {fee.no}
@@ -150,9 +153,26 @@ const Registration = () => {
           </div>
         </motion.div>
 
+        {/* Register Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex justify-center mt-10"
+        >
+          <button
+            onClick={() => navigate("/register")}
+            className="bg-red-700 hover:bg-red-800 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-md transition-all duration-300"
+          >
+            Register Now
+          </button>
+        </motion.div>
+
       </div>
     </section>
   );
 };
 
 export default Registration;
+

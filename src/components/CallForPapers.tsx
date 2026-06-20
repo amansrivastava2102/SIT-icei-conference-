@@ -191,7 +191,7 @@ const CallForPapers = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-5 mb-8">
 
             <img
-              src="/images/logos/logo7.jpeg"
+              src="images/logos/logo7.jpeg"
               alt="Submission Guidelines"
               className="w-34 h-32 object-contain"
             />
