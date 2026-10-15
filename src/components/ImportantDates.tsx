@@ -20,21 +20,14 @@ const ImportantDates = () => {
     {
       icon: Calendar,
       title: 'Notification Date',
-      date: '30th September 2026',
+      date: '25th October 2026',
       description: 'Submission deadline for initial review.',
       color: 'from-blue-600 to-blue-700',
     },
     {
-      icon: Ticket,
-      title: 'Super Early Bird Registration',
-      date: '10th July 2026',
-      description: 'Notification of first round acceptance.',
-      color: 'from-blue-700 to-blue-800',
-    },
-    {
       icon: FileUp,
       title: 'Early Bird Registration',
-      date: '10th August 2026',
+      date: '30th October 2026',
       description: 'Camera Ready submission deadline after revisions.',
       color: 'from-blue-800 to-blue-900',
     },
